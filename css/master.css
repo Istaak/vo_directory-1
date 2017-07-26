@@ -1,0 +1,58 @@
+body{
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.user-card{
+  background: #fff;
+  width: 350px;
+  height: auto;
+  text-align: center;
+  box-shadow: 3px 3px 12px 6px rgba(0,0,0,.2);
+  margin: 30px auto;
+  padding: 30px;
+  transition: all .4s ease;
+  position: relative;
+  top: 0;
+}
+
+.user-card:hover{
+  top: -10px;
+  box-shadow: 3px 13px 12px 6px rgba(0,0,0,.1);
+}
+/*Image design*/
+.user-card > .image{
+  border-radius: 50%;
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto;
+
+}
+/*worker info: name job*/
+.user-card > .user-title {
+  padding: 35px 0;
+}
+/*worker name*/
+.user-title > .name{
+  font-size: 1.3em;
+  line-height: 1.5;
+  color: #333;
+}
+/*job title*/
+.user-title > .jobtitle{
+  font-size: 1em;
+  color: #999;
+}
+/*contact info: twitter. github, email*/
+.contactinfo > a:hover{
+  color: #000;
+}
+.contactinfo > a{
+  color: #848484;
+  margin: 0 10px;
+  display: inline-block;
+}

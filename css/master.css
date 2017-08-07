@@ -1,3 +1,113 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/*
+  ================================================
+  General
+  ================================================
+*/
+
 body{
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -7,53 +117,96 @@ body{
   box-sizing: border-box;
 }
 
-.user-card{
+/*
+  ================================================
+  user-card
+  ================================================
+*/
+
+.user-card {
   background: #fff;
-  width: 350px;
+  width: 296px;
   height: auto;
-  text-align: center;
-  box-shadow: 3px 3px 12px 6px rgba(0,0,0,.2);
+  box-shadow: 3px 8px 23px 3px rgba(115, 113, 113, 0.36);
+  padding: 30px 0 0 0;
+  /*margin: 45px 20px 30px 0;*/
   margin: 30px auto;
-  padding: 30px;
-  transition: all .4s ease;
-  position: relative;
-  top: 0;
+  text-align: center;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  /*display: inline-block;*/
+  border-bottom: solid 30px rgb(0,25,69);
 }
 
-.user-card:hover{
-  top: -10px;
-  box-shadow: 3px 13px 12px 6px rgba(0,0,0,.1);
+.user-card:hover {
+  cursor: pointer;
 }
+
+/*
+  ===================================
+  image
+  ===================================
+*/
+/*grayscale efect*/
+
+.user-card > .image {
+  transition: all .4s ease;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.user-card:hover > .image {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
 /*Image design*/
 .user-card > .image{
   border-radius: 50%;
   max-width: 200px;
   height: auto;
-  margin: 0 auto;
-
 }
+/*
+  ===================================
+  text information
+  ===================================
+*/
+
 /*worker info: name job*/
-.user-card > .user-title {
-  padding: 35px 0;
+.user-card > .usertitle {
+  padding: 9px 0;
 }
 /*worker name*/
-.user-title > .name{
+.usertitle > .name{
   font-size: 1.3em;
   line-height: 1.5;
   color: #333;
 }
 /*job title*/
-.user-title > .jobtitle{
+.usertitle > .jobtitle{
   font-size: 1em;
-  color: #999;
+  color: #444;
+  margin: 15px 0 12px 0;
+
 }
+/**/
+.user-card hr{
+  border-top: 1px solid #333;
+  margin: 0;
+}
+
+/*
+  ===================================
+  font awesome
+  ===================================
+*/
 /*contact info: twitter. github, email*/
 .contactinfo > a:hover{
   color: #000;
 }
-.contactinfo > a{
-  color: #848484;
-  margin: 0 10px;
+.contactinfo > a {
+  color: #777;
+  margin: 25px;
   display: inline-block;
 }
 .main-header{

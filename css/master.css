@@ -56,3 +56,10 @@ body{
   margin: 0 10px;
   display: inline-block;
 }
+.main-header{
+  background-color: #262e31;
+  height: 60px;
+}
+#logotipo{
+  padding: 14px;
+}

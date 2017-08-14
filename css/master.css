@@ -199,7 +199,7 @@ body{
   font awesome
   ===================================
 */
-/*contact info: twitter. github, email*/
+/*contact info: twitter, github, email*/
 .contactinfo > a:hover{
   color: #000;
 }
@@ -241,7 +241,7 @@ body{
   Buttons
   ========================
 */
-.areas > .mybutton{
+.areas > .areabutton{
   width: 350px;
   height: 80px;
   display: inline-block;
@@ -252,7 +252,7 @@ body{
   transition-duration: 0.4s;
 }
 
-.areas > .mybutton:hover
+.areas > .areabutton:hover
 {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   position: relative;

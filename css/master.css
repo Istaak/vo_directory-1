@@ -128,11 +128,12 @@ body{
   width: 296px;
   height: auto;
   box-shadow: 3px 8px 23px 3px rgba(115, 113, 113, 0.36);
-  padding: 30px 0 0 0;
-  margin: 30px auto;
   text-align: center;
   border-radius: 5px;
   letter-spacing: 1px;
+  padding-top: 30px;
+  margin: 45px 20px 30px 0;
+  display: inline-block;
   border-bottom: solid 30px rgb(0,25,69);
 }
 
@@ -198,19 +199,116 @@ body{
   font awesome
   ===================================
 */
-/*contact info: twitter. github, email*/
+/*contact info: twitter, github, email*/
 .contactinfo > a:hover{
   color: #000;
 }
+
 .contactinfo > a {
   color: #777;
   margin: 25px;
   display: inline-block;
 }
+
 .main-header{
   background-color: #262e31;
   height: 60px;
 }
+
 #logotipo{
   padding: 14px;
+}
+
+/*
+  ===============================================
+  filter-component
+  ===============================================
+*/
+
+.filter-component{
+  margin: 70px auto;
+  display: flex;
+}
+
+.filter-component > .areas{
+
+  width: 350px;
+  float: left;
+}
+
+/*
+  ========================
+  Buttons
+  ========================
+*/
+.areas > .areabutton{
+  width: 350px;
+  height: 80px;
+  display: inline-block;
+  font-size: 16px;
+  padding: 0;
+  border-width: .5px;
+  color: #fff;
+  transition-duration: 0.4s;
+}
+
+.areas > .areabutton:hover
+{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  position: relative;
+  top: -2px;
+}
+/*
+  Buttons colors
+*/
+.areas > .todos{
+  background-color: rgb(255, 68, 37);
+}
+
+.areas > .faas{
+  background-color: rgb(0, 177, 148);
+}
+
+.areas > .sasas{
+  background-color: rgb(1, 24, 76);
+}
+
+.areas > .python{
+  background-color: rgb(0, 136, 182);
+}
+
+.areas > .php{
+  background-color: rgb(131, 103, 154);
+}
+
+.areas > .apps{
+  background-color: rgb(59, 6, 76);
+}
+
+/*
+  ===================
+  display workers
+  ===================
+*/
+.filter-component > .workers{
+  margin: 0 24px;
+  width: 960px;
+}
+
+.workers > hr{
+  border-width: 2px;
+  border-color: rgb(255, 68, 37);
+}
+
+/*index letter*/
+
+.workers > .index{
+  color: rgb(234, 88, 75);
+  font-size: 40px;
+  line-height: 25px;
+  margin-bottom: 18px;
+  margin-top: 33px;
+}
+.workers > .index:first-of-type{
+  margin-top: 0;
 }
